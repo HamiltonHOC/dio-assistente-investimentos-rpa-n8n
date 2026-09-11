@@ -25,7 +25,7 @@ Construir um pipeline de automação e RPA que:
      └──────────────┬──────────────────┘
                     ▼
       [ Mensagens Personalizadas ]
-⚙️ Componentes do Sistema
+Componentes do Sistema
 RPA com Python (BeautifulSoup e Requests):
 
 Extrai automaticamente a lista de clientes, saldos e perfis de investidor de páginas HTML.
