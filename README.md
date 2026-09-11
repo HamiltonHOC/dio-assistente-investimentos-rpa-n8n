@@ -1,14 +1,14 @@
-#  Assistente de Investimentos com RPA e IA Generativa (n8n + Python)
+  Assistente de Investimentos com RPA e IA Generativa (n8n + Python)
 Projeto desenvolvido como entrega final do Bootcamp **Santander 2026 - Automação com n8n** na [DIO](https://dio.me).
 ---
-##  Objetivo do Projeto
+  Objetivo do Projeto
 Construir um pipeline de automação e RPA que:
 1. **Coleta dados de clientes** de uma página web simulando um ambiente corporativo/financeiro via Python.
 2. **Processa e orquestra as informações** através de um workflow completo no **n8n**.
 3. **Cruza os perfis de investidores** (Conservador, Moderado e Arrojado) com uma base de produtos financeiros.
 4. **Gera mensagens e recomendações personalizadas** com auxílio de Inteligência Artificial Generativa.
 ---
-##  Arquitetura da Solução
+  Arquitetura da Solução
 ```text
 [ Página Web de Clientes ] 
             │
