@@ -1,51 +1,36 @@
-  Assistente de Investimentos com RPA e IA Generativa (n8n + Python)
-Projeto desenvolvido como entrega final do Bootcamp **Santander 2026 - Automação com n8n** na [DIO](https://dio.me).
+ # Assistente de Investimentos com RPA e IA Generativa (n8n + Python)
+
+Projeto desenvolvido como entrega final do Bootcamp **Santander 2026 - Automação com n8n** na DIO.
+
 ---
-  Objetivo do Projeto
-Construir um pipeline de automação e RPA que:
-1. **Coleta dados de clientes** de uma página web simulando um ambiente corporativo/financeiro via Python.
-2. **Processa e orquestra as informações** através de um workflow completo no **n8n**.
-3. **Cruza os perfis de investidores** (Conservador, Moderado e Arrojado) com uma base de produtos financeiros.
-4. **Gera mensagens e recomendações personalizadas** com auxílio de Inteligência Artificial Generativa.
+
+## 📌 Sobre o Projeto e Meu Aprendizado
+Sou estudante de Produção Criativa com IA na Estácio e participei deste bootcamp com o objetivo de entender como ferramentas low-code (como o n8n) e automações com RPA podem ser integradas com Inteligência Artificial para gerar valor prático.
+
+Não venho da área de desenvolvimento de software tradicional, portanto encarei a jornada como um exercício de pair programming e mentoria guiada: utilizei Inteligência Artificial generativa (**Google Antigravity / DIO Agent**) como meu copiloto de aprendizado para desmistificar código, entender a lógica das integrações e estruturar este projeto.
+
 ---
-  Arquitetura da Solução
-```text
-[ Página Web de Clientes ] 
-            │
-            ▼ (Web Scraping com Python)
-     [ Script RPA ]
-            │
-            ▼ (Disparo via Webhook HTTP POST)
-    [ Workflow no n8n ]
-            │
-     ┌──────┴──────────────────────────┐
-     ▼                                 ▼
-[ Base de Investimentos (CSV) ]   [ Agente de IA / LLM ]
-     │                                 │
-     └──────────────┬──────────────────┘
-                    ▼
-      [ Mensagens Personalizadas ]
-Componentes do Sistema
-RPA com Python (BeautifulSoup e Requests):
 
-Extrai automaticamente a lista de clientes, saldos e perfis de investidor de páginas HTML.
-Converte os dados em formato JSON estruturado e envia diretamente para o n8n através de um Webhook.
-Orquestração no n8n:
+## 🎯 O que a solução faz?
+O projeto simula uma esteira automatizada para o mercado financeiro:
+1. **Coleta de Dados (Python):** Faz a raspagem (web scraping) dos dados de clientes em uma página web simulada.
+2. **Orquestração (n8n):** Recebe esses dados via Webhook, processa a fila e cruza com uma tabela de investimentos disponíveis.
+3. **Personalização com IA:** Envia os dados estruturados para uma IA Generativa criar uma comunicação sob medida para o perfil de cada investidor (Conservador, Moderado ou Arrojado).
 
-Webhook Trigger: Escuta os eventos e inicia a automação em tempo real.
-Tratamento de Dados: Filtra os clientes e cruza cada perfil com as melhores opções da carteira de investimentos.
-Integração com IA: Envia o contexto do cliente para o modelo de linguagem gerar uma consultoria personalizada.
-Geração de Valor:
+---
 
-Produção automática de relatórios e mensagens consultivas sem necessidade de intervenção humana manual.
- Tecnologias Utilizadas
-n8n: Orquestrador de fluxos low-code/no-code.
-Python: Automação de extração (RPA / Web Scraping).
-IA Generativa (LLMs): Personalização e geração inteligente de comunicação.
-GitHub: Documentação, versionamento e entrega do projeto.
+## 🛠️ Tecnologias e Ferramentas
+- **n8n:** Automação e integração dos nós de serviço.
+- **Python:** Script para automação de coleta de dados (RPA).
+- **IA Generativa (LLMs):** Redação personalizada das recomendações aos investidores.
+- **Google Antigravity / DIO Agent:** Copiloto de IA utilizado durante a mentoria e desenvolvimento do projeto.
+- **GitHub:** Repositório de documentação e entrega da solução.
 
-Desenvolvido por Hamilton Castro
-Estudante de Produção Criativa com IA & Participante do Bootcamp Santander 2026 (DIO)
+---
 
+## 💡 Reflexão Final
+A automação com n8n aliada à IA mostra como a barreira técnica diminuiu. Saber articular o problema, entender a arquitetura do fluxo e usar a inteligência artificial como mentora aceleradora é uma habilidade fundamental para o mercado atual.
 
-
+---
+**Autor:** Hamilton Castro  
+*Bootcamp Santander 2026 - Automação com n8n (DIO)*
